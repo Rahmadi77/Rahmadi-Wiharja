@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         listPemain.add(Pemain("Tonny Kross",R.drawable.kross,"Gelandang","1.82","Greifswald,Jerman","01 April 1990 "))
         listPemain.add(Pemain("Vinicius Jose Paixao de Oliveira",R.drawable.viny,"Penyerang","1.76","Sao Goncalo, Brasil","12 Juli 2000"))
         listPemain.add(Pemain("Eden Hazard",R.drawable.hazard,"Penyerang","1.75","La Louvière, Belgia","07 Januari 1991 "))
+
         binding.list.adapter = AdapterTeamBola(this,listPemain,object  : AdapterTeamBola.OnClickListener{
             override fun detailData(item: Pemain?) {
                 Dialog(this@MainActivity).apply {
